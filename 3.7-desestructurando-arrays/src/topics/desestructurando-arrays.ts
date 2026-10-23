@@ -50,9 +50,9 @@ const listadoAlumnos: ListadoAlumnos = {
 
 // Accedemos al segundo alumno mediante el índice 1
 const { nombre, apellidos } = listadoAlumnos.listaAlumnos[1];
+console.log("Nombre: ", nombre, ". Apellidos", apellidos);
 
-const nombreCompleto = `Nombre: ${nombre}. Apellidos: ${apellidos}`;
-
-console.log(nombreCompleto);
+const { modulos } = listadoAlumnos.listaAlumnos[1].modulos[0];
+console.log("Modulos: ", modulos);
 
 export {};
