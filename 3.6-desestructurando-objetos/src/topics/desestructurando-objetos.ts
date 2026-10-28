@@ -54,16 +54,17 @@ const alumno2: Alumno = {
     }
 }
 
+// mostrar los dos alumnos sin desestructurar
 console.table([alumno1, alumno1.matricula, alumno1.matricula.centroEducativo]);
 
 console.table([alumno2, alumno2.matricula, alumno2.matricula.centroEducativo]);
 
-const {nombre, apellidos} = alumno2;
-console.log("Alumno: ", nombre, apellidos);
-
-const {cicloFormativo} = alumno2.matricula;
-console.log("Ciclo formativo: ", cicloFormativo);
-const {centro} = alumno2.matricula.centroEducativo;
-console.log("Centro: ", centro);
+// Desestructuración de alumno 2
+const { nombre, apellidos } = alumno2;
+console.log("Alumno:", nombre, apellidos);
+const { cicloFormativo } = alumno2.matricula;
+console.log("Ciclo Formativo:", cicloFormativo);
+const { centro } = alumno2.matricula.centroEducativo;
+console.log("Centro:", centro);
 
 export {};
