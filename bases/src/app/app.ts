@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { contadorComponent } from './contador/contador';
+import { Heroe } from './heroes/heroe/heroe';
 
 @Component({
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
-  imports: [contadorComponent],
+  imports: [contadorComponent, Heroe],
 })
 export class App {
   public title: string = "José";
