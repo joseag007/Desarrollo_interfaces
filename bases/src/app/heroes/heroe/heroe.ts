@@ -1,8 +1,9 @@
 
 import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
 
 @Component({
-  imports: [],
+  imports: [NgIf],
   selector: 'app-heroe',
   styleUrl: './heroe.css',
   templateUrl: './heroe.html',

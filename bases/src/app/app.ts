@@ -2,23 +2,25 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { contadorComponent } from './contador/contador';
 import { Heroe } from './heroes/heroe/heroe';
+import { PlayamarJacaranda } from './Playamar-Jacaranda/playamar-jacaranda';
+import { Lista } from './heroes/lista/lista';
 
 @Component({
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
-  imports: [contadorComponent, Heroe],
+  imports: [contadorComponent, Heroe, PlayamarJacaranda, Lista],
 })
 export class App {
   public title: string = "José";
-  public x:number = 1;
-  public contador: number=0;
+  public x: number = 1;
+  public contador: number = 0;
 
   incrementarPor(): void {
-  this.contador +=this.x;
+    this.contador += this.x;
   }
   decrementarPor(): void {
-  this.contador -=this.x;
+    this.contador -= this.x;
   }
   resetear(): void {
     this.contador = 0;

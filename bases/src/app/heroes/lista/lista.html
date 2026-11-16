@@ -1,1 +1,15 @@
-<p>lista works!</p>
+<h3>Lista de Héroes</h3>
+
+<ul class="mt-2 list-group">
+  <!-- <li class="list-group-item">Goku</li>
+  <li class="list-group-item">Vegeta</li>
+  <li class="list-group-item">Piccolo</li>
+  <li class="list-group-item">Trunks</li>
+  <li class="list-group-item">Trunks</li> -->
+</ul>
+
+<ul class="mt-2 list-group">
+  @for (nombre of nombreHeroes; track nombre) {
+    <li class="list-group-item">{{nombre}}</li>
+  }
+</ul>

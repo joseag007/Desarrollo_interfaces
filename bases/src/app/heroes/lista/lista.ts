@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   imports: [],
@@ -6,4 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './lista.css',
   templateUrl: './lista.html',
 })
-export class Lista {}
+export class Lista implements OnInit {
+  public nombreHeroes:string[] = ['Goku', 'Piccolo', 'Vegeta', 'Gohan', 'Trunks'];
+
+  constructor() {}
+
+  ngOnInit(): void {}
+}
