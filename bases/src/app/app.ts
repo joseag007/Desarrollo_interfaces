@@ -1,15 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { contadorComponent } from './contador/contador';
-import { Heroe } from './heroes/heroe/heroe';
 import { PlayamarJacaranda } from './Playamar-Jacaranda/playamar-jacaranda';
-import { Lista } from './heroes/lista/lista';
+import { HeroesModule } from './heroes/heroes-module';
+import { DbzModule } from './dbz/dbz-module'; // Ajusta la ruta si la carpeta tiene otro nombre
 
 @Component({
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
-  imports: [contadorComponent, Heroe, PlayamarJacaranda, Lista],
+  imports: [contadorComponent, PlayamarJacaranda, HeroesModule, DbzModule],
 })
 export class App {
   public title: string = "José";

@@ -1,12 +1,11 @@
 
 import { Component } from '@angular/core';
-import { NgIf } from '@angular/common';
 
 @Component({
-  imports: [NgIf],
   selector: 'app-heroe',
   styleUrl: './heroe.css',
   templateUrl: './heroe.html',
+  standalone: false
 })
 export class Heroe {
   public nombre: string = "Goku";
