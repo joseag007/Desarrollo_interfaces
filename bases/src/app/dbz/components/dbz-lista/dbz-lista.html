@@ -6,12 +6,12 @@
   let esPar=$even;
   let esImpar=$odd;
   let esUltimo=$last;
-  let esPrimero$first;
+  let esPrimero=$first;
   ){
     <li class="list-group-item"
     [ngClass]="{
-      'list-group-item-primary': esPrimero
-      'list-group-item-secondary': esImpar
+      'list-group-item-primary': esPrimero,
+      'list-group-item-secondary': esImpar,
       'list-group-item-danger': esUltimo
     }">
     <span>{{personaje.nombre}} - </span>
